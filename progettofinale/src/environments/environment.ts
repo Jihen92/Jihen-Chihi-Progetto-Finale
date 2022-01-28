@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  clienti:"https://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,ASC",
+  fatture:"https://epicode.online/epicodebeservice_v2/api/fatture?page=0&size=20&sort=id,ASC",
+  comuni:"https://epicode.online/epicodebeservice_v2/api/comuni?page=0&size=20&sort=id,ASC",
+  province:"https://epicode.online/epicodebeservice_v2/api/province?page=0&size=20&sort=id,ASC"
+
+
 };
 
 /*

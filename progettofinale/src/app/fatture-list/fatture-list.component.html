@@ -1,0 +1,33 @@
+<h1>Le fatture esistente..</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Data</th>
+      <th scope="col"> Numero</th>
+      <th scope="col">Anno</th> 
+      <th scope="col">Importo</th> 
+      <th scope="col">dataInserimento</th> 
+      <th scope="col">dataUltimoContatto</th> 
+      <th scope="col"></th> 
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of  dataFattura; index as i">
+      <th scope="row">{{i+1}}</th>
+      <td>{{item.data}}</td>
+      <td>{{item.numero}}</td>
+      <td>{{item.anno}}</td>
+      <td>{{item.importo}}</td>
+      <td>{{item.dataInserimento}}</td>
+      <td>{{item.dataUltimoContatto}}</td>
+
+
+      <td>
+        <button type="button" class="btn btn-warning btn-sm mx-2"><i class="bi bi-pen-fill"></i></button> 
+        <button type="button" class="btn btn-danger btn-sm mx-2"><i class="bi bi-trash"></i></button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+

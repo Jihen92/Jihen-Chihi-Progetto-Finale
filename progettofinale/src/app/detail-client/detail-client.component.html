@@ -1,0 +1,22 @@
+<div class="card">
+    
+    <h5 class="card-header">{{clienti.nomeContatto}}{{clienti.cognomeContatto}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{clienti.id}}</h5>
+      <h5 class="card-title">Ragione Sociale : {{clienti.ragioneSociale}}</h5>
+      <h5 class="card-title">Telefono : {{clienti.telefono}}</h5>
+      <h5 class="card-title">Tipo Cliente :{{clienti.tipoCliente}}</h5>
+      <h5 class="card-title">Partita Iva :{{clienti.partitaIva}}</h5>
+      <h5 class="card-title">Email :{{clienti.email}}</h5>
+      <h5 class="card-title">Pec :{{clienti.pec}}</h5>
+      <h5 class="card-title">Telefono Contatto :{{clienti.telefonoContatto}}</h5>
+      <h5 class="card-title">Email Contatto :{{clienti.emailContatto}}</h5>
+      <h5 class="card-title">IndirizzoSedeOperativa :{{clienti.indirizzoSedeOperativa}}</h5>
+     
+    
+      <button type="button" class="btn btn-danger" (click)="update">Update Client</button>
+    </div>
+  </div>
+  
+  
+{{clienti|json}}

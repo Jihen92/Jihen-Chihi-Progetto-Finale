@@ -1,0 +1,41 @@
+<form>
+    <h1 class="my-3">Agguingi Fatture </h1>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Id Fattura</label>
+            <input type="text" [(ngModel)]="fatture.id" class="form-control"placeholder="Id...">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label >Data Fattura</label>
+            <input type="text"  [(ngModel)]="fatture.data" class="form-control" id="inputPassword4" placeholder="Data ...">
+          </div>
+
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+          <label >Numero</label>
+          <input type="text" [(ngModel)]="fatture.numero" class="form-control"  placeholder="Numero...">
+        </div>
+        <div class="form-group col-md-6">
+          <label >Anno</label>
+          <input type="text"  [(ngModel)]="fatture.anno" class="form-control"  placeholder="Anno...">
+        </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Importo</label>
+            <input type="text" [(ngModel)]="fatture.importo" class="form-control"  placeholder="Importo..">
+          </div>
+          <div class="form-group col-md-6">
+            <label >Stato</label>
+            <input type="text" [(ngModel)]="fatture.stato" class="form-control"  placeholder="Stato...">
+          </div>
+          <div class="form-group col-md-12">
+            <label>Cliente</label>
+            <input type="text" [(ngModel)]="fatture.cliente" class="form-control"  placeholder="Nome cliente...">
+          </div>
+          </div>
+        <button class="btn btn-primary col-md-12 " (click)="createFatture()"> Add Fattura </button>
+    </form>
+    
